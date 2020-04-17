@@ -33,9 +33,15 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'objcDemo' => ['HKUIAddtion/Assets/*.png']
   # }
-  s.module_map = 'HKUIAddtion/Modules/module.modulemap'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'CommonCrypto', 'Foundation'
+
+  s.frameworks = 'UIKit', 'Foundation' ,'CommonCrypto'
   # s.dependency 'AFNetworking'
+
+  # 完整验证和push到仓库的命令为
+  # 验证pod
+  # pod lib lint --allow-warnings --use-libraries
+  # push到仓库
+  # pod repo push MyRepo HKUIAddtion.podspec --verbose --use-libraries --allow-warnings
 end
