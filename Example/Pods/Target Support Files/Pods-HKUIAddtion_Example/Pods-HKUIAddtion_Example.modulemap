@@ -1,0 +1,6 @@
+framework module Pods_HKUIAddtion_Example {
+  umbrella header "Pods-HKUIAddtion_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
