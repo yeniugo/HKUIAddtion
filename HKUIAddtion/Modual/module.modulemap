@@ -1,4 +1,4 @@
-module CommonCrypto [system] [extern_c] {
+module HKUIAddtion [system] [extern_c] {
   umbrella header "CommonCrypto.h"
   export *
   module * { export * }
