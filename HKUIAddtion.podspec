@@ -33,8 +33,9 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'objcDemo' => ['HKUIAddtion/Assets/*.png']
   # }
+  s.module_map = 'HKUIAddtion/Modules/module.modulemap'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit','CommonCrypto'
+  s.frameworks = 'UIKit', 'CommonCrypto', 'Foundation'
   # s.dependency 'AFNetworking'
 end
