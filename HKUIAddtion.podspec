@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HKUIAddtion'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'ui simple'
 
 # This description is used to generate tags and improve search results.
@@ -42,8 +42,11 @@ Pod::Spec.new do |s|
   # s.dependency 'AFNetworking'
 
   # 完整验证和push到仓库的命令为
-  # 验证pod
-  # pod lib lint --allow-warnings --use-libraries
+  # 验证pod（验证本地代码）
+  # pod lib lint --allow-warnings
+  # 验证pod（验证线上仓库代码）
+  # pod spec lint --allow-warnings
   # push到仓库
-  # pod repo push MyRepo HKUIAddtion.podspec --verbose --use-libraries --allow-warnings
+  # pod repo push MyRepo HKUIAddtion.podspec --allow-warnings
+  # frameworks，填写的时候记得在XCode中在"Link Binay With Libraries"搜索一下
 end
