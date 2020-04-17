@@ -36,9 +36,9 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
 
-  s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
+  #s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
   #s.module_map = 'HKUIAddtion/Modual/module.modulemap'
-  s.frameworks = 'UIKit', 'Foundation' ,'CommonCrypto'
+  s.frameworks = 'UIKit', 'Foundation' 
   # s.dependency 'AFNetworking'
 
   # 完整验证和push到仓库的命令为
